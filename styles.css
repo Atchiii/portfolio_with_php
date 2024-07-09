@@ -1,0 +1,378 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d; /* Dark background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ff6f61; /* Coral */
+}
+
+a:hover {
+    color: #ff4b3a; /* Dark Coral */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c; /* Dark Gray */
+}
+
+.navbar-brand {
+    color: #76ff03; /* Lime Green */
+}
+
+.navbar-nav .nav-link {
+    color: #ffeb3b; /* Yellow */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #76ff03; /* Lime Green */
+}
+
+/* Jumbotron */
+header.jumbotron {
+    background: linear-gradient(to right, rgba(30,30,30,0.8), rgba(60,60,60,0.8)), url('https://source.unsplash.com/random/1920x1080');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+}
+
+header.jumbotron .display-4 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header.jumbotron .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header.jumbotron .text-left {
+    text-align: left;
+}
+
+header.jumbotron .art-container {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header.jumbotron .art {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.7;
+    transform: scale(1.1); /* Slightly larger shapes */
+}
+
+.jumbotron {
+    background-color: #343a40; /* Example background color */
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.jumbotron img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Adjust this value to make the image larger */
+}
+
+
+
+header.jumbotron .art1{
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    right: 10%;
+    background-image: url("./img/undraw_Programming_re_kg9v.png");
+}
+
+header.jumbotron .art2 {
+    width: 150px;
+    height: 150px;
+    top: 25%;
+    right: 30%;
+    background: #ffeb3b; /* Yellow */
+}
+
+header.jumbotron .art3 {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    right: 20%;
+    background: #2196f3; /* Blue */
+}
+
+header.jumbotron .art4 {
+    width: 130px;
+    height: 130px;
+    top: 65%;
+    right: 10%;
+    background: #ff5722; /* Deep Orange */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 767px) {
+    header.jumbotron .art-container {
+        display: none;
+    }
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+/* Add scroll effect */
+section .scroll-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+section.in-view .scroll-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00bcd4; /* Light Blue */
+}
+
+/* About Me Section */
+#about {
+    background-color: #880e4f; /* Dark Pink */
+    color: #ffffff;
+}
+
+#about h2 {
+    color: #ffeb3b; /* Yellow */
+}
+
+#about .profile-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about .profile-card img {
+    border-radius: 50%;
+    border: 5px solid yellow;
+    
+}
+
+.img-sm {
+    width: 280px; /* Adjust the width as needed */
+    height: 280px; /* Adjust the height as needed */
+}
+
+#about .details-card {
+    background: #1a1a1a;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* My Skills Section */
+#skills .fa-3x {
+    margin-bottom: 10px;
+}
+
+
+/* Projects Section */
+#projects {
+    background-color: #004d40; /* Dark Teal */
+    color: #ffffff;
+    padding-top: 0px;
+}
+
+#projects h2 {
+    color: #ffeb3b; /* Yellow */
+}
+
+.card {
+    background-color: #2c2c2c;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #b0bec5; /* Light Grey */
+}
+
+/* Custom styles for the Services section */
+#services .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#services .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#services .card-body {
+    padding: 2rem;
+}
+
+#services .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#services .card-text {
+    font-size: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    #services .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Custom styles for the Resume section */
+#resume {
+    background: linear-gradient(135deg, #4b4b4b, #2e2e2e); /* Darker gradient background */
+}
+
+#resume h2 {
+    color: yellow; /* Light text color */
+
+}
+
+#resume .lead {
+    color: #d0d0d0; /* Slightly lighter text color for the lead paragraph */
+}
+
+#resume .btn-primary {
+    background-color: #5bc0de; /* A vibrant blue color for the button */
+    border: none;
+    padding: 15px 30px; /* Larger padding for the button */
+    font-size: 1.2rem;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#resume .btn-primary:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.resume-divider {
+    border-top: 2px solid #ffffff; /* White thick line */
+    width: 100%;
+    margin: 0 auto; /* Centering the divider */
+}
+
+
+/* Contact Details Section */
+#contact {
+    background-color: #263238; /* Dark Blue-Grey */
+    color: #ffffff;
+}
+
+#contact h2 {
+    color: #00bcd4; /* Light Blue */
+}
+
+/* Contact Me Section */
+#contact-me {
+    background-color: #004d40; /* Dark Teal */
+    color: #ffffff;
+}
+
+#contact-me h2 {
+    color: #00bcd4; /* Blue */
+}
+
+#contact-me .social-icons {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+#contact-me .social-icons .fa {
+    color: #ffffff; /* White color for the icons */
+    font-size: 2.5rem; /* Larger icon size */
+}
+
+#contact-me .social-icons .separator {
+    border-left: 2px solid #ffffff; /* White vertical line */
+    height: 2.5rem; /* Adjust height to fit between icons */
+    margin: 0 15px; /* Add some margin for spacing */
+}
+
+.form-control {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #4e4e4e;
+}
+
+.form-control:focus {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border-color: #00bcd4; /* Light Blue */
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+footer h5 {
+    color: #ffeb3b; /* Yellow */
+}
+
+footer a {
+    color: #76ff03; /* Lime Green */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffeb3b; /* Yellow */
+}
+
+/* Scroll Animation */
+@keyframes scrollUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
